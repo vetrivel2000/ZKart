@@ -27,7 +27,6 @@ public class ZKartRunner {
                     System.out.println("Enter mail");
                     String mail= scan.next();
                     boolean flag= logical.checkUser(mail);
-                    System.out.println(flag);
                     if (flag)
                     {
                         System.out.println("You already have an account..Please sign in..");
@@ -38,7 +37,6 @@ public class ZKartRunner {
                     System.out.println("Enter password");
                     String password=scan.next();
                     boolean checkPassword=logical.passwordChecks(password);
-                    System.out.println(checkPassword);
                     if(!checkPassword)
                     {
                         System.out.println("Enter the correct password");
